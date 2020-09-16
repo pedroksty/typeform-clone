@@ -5,6 +5,7 @@ import GlobalStyle from './styles/global'
 import { Main, Section, Sticky } from './styles'
 
 import FirstAndSecond from './components/FirstAndSecond'
+import Header from './components/Header'
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -13,6 +14,8 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
+
+      <Header />
 
       <Main style={{ height: '1610vh' }}>
         <Section style={{ height: '72.7%' }}>
