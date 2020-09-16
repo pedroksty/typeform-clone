@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import GlobalStyle from './styles/global'
 
@@ -7,12 +7,14 @@ import { Main, Section, Sticky } from './styles'
 import FirstAndSecond from './components/FirstAndSecond'
 
 const App: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
   return (
     <>
       <GlobalStyle />
 
       <Main style={{ height: '1610vh' }}>
-        <h1>dale</h1>
         <Section style={{ height: '72.7%' }}>
           <FirstAndSecond />
         </Section>
